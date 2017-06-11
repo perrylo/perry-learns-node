@@ -1,0 +1,13 @@
+node_modules/
+*.log
+.idea
+haters/
+variables.env
+variables.env.now
+
+# Some trickery to keep the sample data photos in this folder, but not allow new ones to enter git
+#public/uploads/*
+#!*.gitkeep
+#!public/uploads/store.png
+#!public/uploads/0d3624fc-78ee-4297-8d15-e191b9775520.jpg
+# ...etc, see video 41 

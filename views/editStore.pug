@@ -1,0 +1,12 @@
+extends layout
+
+include mixins/_storeForm
+
+block content
+  .inner
+    h2 #{title}
+    
+    //- we can pass data to mixins, ie
+    //- +storeForm({ name:'Tim Hortons' })
+
+    +storeForm(store)

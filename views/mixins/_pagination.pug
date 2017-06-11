@@ -1,0 +1,10 @@
+mixin pagination(page, numberOfPages, count)
+  .pagination
+    .pagination__prev
+      if page > 1 
+        a(href=`/stores/page/${page-1}`) Prev
+    .pagination__text
+      p Page #{page} of #{numberOfPages} - #{count} total results
+    .pagination__next
+      if page < numberOfPages 
+        a(href=`/stores/page/${parseFloat(page)+1}`) Next

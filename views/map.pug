@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .inner
+    h2= title
+    .map
+      .autocomplete
+        input.autocomplet__input(type="text" placeholder="Search for Anything" name="geolocate")
+      #map
+        p Loading map...
